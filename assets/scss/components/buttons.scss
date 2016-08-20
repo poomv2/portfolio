@@ -1,0 +1,32 @@
+.button {
+  background-color: transparent;
+  border: 2px solid $primary-color;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &--icon {
+    position: relative;
+    padding-left: 3rem;
+
+    &::before {
+      content:'';
+      position: absolute;
+      top: 17%;
+      left: 7%;
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &--email {
+    margin-top: 1rem;
+    &::before {
+      content:'';
+      background: url('../img/envelope.svg') no-repeat;
+      background-size: 100%;
+    }
+  }
+
+}

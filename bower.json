@@ -1,0 +1,30 @@
+{
+  "name": "portfolio-test",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Steve Forbes <sonicpoom@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "foundation-sites": "^6.2.3",
+    "gulp": "^3.9.1"
+  },
+  "overrides" : {
+		"foundation-sites": {
+			"main": ["dist/foundation.js"]
+		},
+		"jquery": {
+			"main": ["dist/jquery.js"]
+		}
+  }
+}

@@ -1,0 +1,102 @@
+.work-item {
+  position: relative;
+  margin: 3rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  opacity: 0.95;
+  transition: 1s;
+
+  @include breakpoint(small only) { margin: 2rem 0; }
+
+  &.ert { background: url('../img/ert-wide.jpg'); }
+  &.htx { background: url('../img/htx-wide.jpg'); }
+  &.ezy { background: url('../img/ezy-wide.jpg'); }
+  &.ponant { background: url('../img/ponant-wide.jpg'); }
+  &.luggage { background: url('../img/luggage-wide.jpg'); }
+  &.rwc { background: url('../img/rwc-wide.jpg'); }
+  &.rwc-info { background: url('../img/rwc-info-wide.jpg'); }
+  &.bols-info { background: url('../img/bolsover-info-wide.jpg'); }
+  &.htx-email { background: url('../img/htx-email-wide.jpg'); }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &__content {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: $dark-blue;
+    padding: 2rem;
+    width: 50%;
+    opacity: .9;
+
+    &.open {
+      top: 0;
+    }
+
+    @include breakpoint(small only) {
+      width: 100%;
+    }
+
+    h4 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__catagory-title {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: $primary-color;
+    letter-spacing: 3px;
+  }
+
+  &__site-link {
+    display: inline-block;
+    float: right;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid $egg-white;
+    background: url('/img/link-symbol.svg') no-repeat;
+    background-size: 50%;
+    background-position: center;
+
+
+
+    &:hover, &:focus {
+      border-color: $primary-color;
+    }
+  }
+
+  &__more-info {
+    font-weight: bold;
+    border-bottom: 3px solid $primary-color;
+
+    &:hover, &:focus {
+      color: $white;
+      border-color: $white;
+    }
+  }
+
+  &__extra {
+    display: none;
+    margin: 2rem 0;
+  }
+
+  &__gallery {
+    div {
+      img { max-height: 80px; }
+    }
+
+
+  }
+}
+
+.reveal { text-align: center; }
